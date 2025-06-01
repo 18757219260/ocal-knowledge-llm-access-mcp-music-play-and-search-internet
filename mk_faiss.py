@@ -198,9 +198,9 @@ if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description="知识库向量构建工具")
-    parser.add_argument("--knowledge", default="knowledge.json", help="知识库JSON文件路径")
+    parser.add_argument("--knowledge", default="/home/wuye/vscode/raspberrypi_5/rasoberry/knowledge.json", help="知识库JSON文件路径")
     parser.add_argument("--index", default="faiss_index", help="FAISS索引目录路径")
-    parser.add_argument("--model", default="text2vec_base_chinese_q8.gguf", help="text2vec-base-chinese-q8.gguf模型路径")
+    parser.add_argument("--model", default="/home/wuye/vscode/raspberrypi_5/rasoberry/text2vec_base_chinese_q8.gguf", help="text2vec-base-chinese-q8.gguf模型路径")
     parser.add_argument("--force", action="store_true", help="此参数已不再使用，保留仅为兼容性")
     args = parser.parse_args()
     
